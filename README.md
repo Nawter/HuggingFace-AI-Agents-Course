@@ -23,10 +23,10 @@ Each unit has a companion post on my Substack where I write a 2,000-word breakdo
 
 ## Course Progress
 
-| Unit | Topic | Status | Substack |
-|------|-------|--------|----------|
-| Unit 1 | What are LLMs? | ✅ Done | [Read →](#) |
-| Unit 2 | Coming soon... | 🔄 In progress | — |
+| Unit | Topic | Status | 
+|------|-------|--------|
+| Unit 1 | What are LLMs? | 
+| Unit 2 | Coming soon... | 
 
 ---
 
@@ -51,9 +51,3 @@ To run the notebooks you'll need:
 ```bash
 pip install transformers smolagents huggingface_hub
 ```
-
----
-
-## Course Link
-
-👉 [huggingface.co/learn/agents-course](https://huggingface.co/learn/agents-course/en/unit0/introduction)# HuggingFace-AI-Agents-Course
