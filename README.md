@@ -8,8 +8,6 @@ My personal notes, notebooks, and writeups as I work through the [HuggingFace AI
 
 This is a learning repo — not a polished library. Every notebook here is me working through the course material hands-on, understanding how LLMs and AI Agents actually work under the hood.
 
-Each unit has a companion post on my Substack where I write a 2,000-word breakdown of what I learned. Links below.
-
 ---
 
 ## Structure
