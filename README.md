@@ -42,7 +42,9 @@ HuggingFace-AI-Agents-Course/
 │
 └── unit_2.3/                       # LangGraph — Building Stateful Agents
     ├── building_blocks.ipynb       # LangGraph core building blocks
-    └── first_graph.ipynb           # Building a first graph with LangGraph
+    ├── first_graph.ipynb           # Building a first graph with LangGraph
+    ├── agent.ipynb                 # Full ReAct agent — vision + tool use with LangGraph
+    └── Batman_training_and_meals.png  # Sample document used in agent.ipynb
 ```
 
 ---
@@ -63,6 +65,13 @@ HuggingFace-AI-Agents-Course/
 - LangGraph core primitives: nodes, edges, and state graphs
 - Building stateful, cycle-capable agent graphs
 - Conditional routing and branching in graphs
+- `AgentState` with `TypedDict` — carrying messages and file paths across nodes
+- `add_messages` operator — appends to message history instead of overwriting
+- Binding tools to LLMs with `bind_tools` and `parallel_tool_calls=False`
+- `tools_condition` — conditional edge that routes on whether a tool was called
+- Full ReAct loop: `assistant → tools → assistant` until no tool call is made
+- Vision tool using `claude-sonnet-4-6` — reading images as base64 for text extraction
+- Async invocation (`ainvoke`) to avoid event loop conflicts in Jupyter
 
 ---
 
