@@ -40,11 +40,18 @@ HuggingFace-AI-Agents-Course/
 │   ├── data/                       # Sample data for exercises
 │   └── lib/                        # Supporting library code
 │
-└── unit_2.3/                       # LangGraph — Building Stateful Agents
-    ├── building_blocks.ipynb       # LangGraph core building blocks
-    ├── first_graph.ipynb           # Building a first graph with LangGraph
-    ├── agent.ipynb                 # Full ReAct agent — vision + tool use with LangGraph
-    └── Batman_training_and_meals.png  # Sample document used in agent.ipynb
+├── unit_2.3/                       # LangGraph — Building Stateful Agents
+│   ├── building_blocks.ipynb       # LangGraph core building blocks
+│   ├── first_graph.ipynb           # Building a first graph with LangGraph
+│   ├── agent.ipynb                 # Full ReAct agent — vision + tool use with LangGraph
+│   └── Batman_training_and_meals.png  # Sample document used in agent.ipynb
+│
+└── unit_3/                         # Agentic RAG — Alfred's Gala Agent (smolagents)
+    ├── app.py                      # Stateless gala agent with all tools
+    ├── app_with_memory.py          # Multi-turn conversation with memory (reset=False)
+    ├── retriever.py                # BM25 RAG tool over guest dataset (HF Hub + local fallback)
+    ├── tools.py                    # WeatherInfoTool, HubStatsTool, DuckDuckGoSearchTool
+    └── requirements.txt            # Python dependencies
 ```
 
 ---
@@ -57,6 +64,20 @@ HuggingFace-AI-Agents-Course/
 | Unit 2.1 | Smolagents — Tools, Code Agents, Multi-Agent Systems | Done |
 | Unit 2.2 | LlamaIndex — Agents, Workflows, and MCP | Done |
 | Unit 2.3 | LangGraph — Building Stateful Agents | Done |
+| Unit 3 | Agentic RAG — Alfred's Gala Agent | Done |
+
+---
+
+## Key Concepts Covered (Unit 3)
+
+- Agentic RAG — combining retrieval-augmented generation with a reasoning agent loop
+- BM25 retrieval over a guest dataset using `smolagents` tool interface
+- Local JSON fallback pattern for offline/reproducible development
+- `CodeAgent` with `planning_interval` — structured multi-step reasoning
+- Decoupling memory from agent by default; opt-in via `reset=False`
+- Multi-turn conversation with `app_with_memory.py`
+- Custom tools: `WeatherInfoTool`, `HubStatsTool`, `DuckDuckGoSearchTool`
+- Why memory is explicit in smolagents: predictability, multi-user safety, cost control, flexibility
 
 ---
 

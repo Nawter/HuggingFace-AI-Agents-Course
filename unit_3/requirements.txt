@@ -1,0 +1,11 @@
+smolagents
+langchain
+langchain-core
+langchain-community
+datasets
+rank_bm25
+huggingface_hub
+ddgs
+python-dotenv
+markdownify
+requests
